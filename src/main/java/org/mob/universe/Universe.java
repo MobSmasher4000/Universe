@@ -1,4 +1,4 @@
-package org.zombie.universe;
+package org.mob.universe;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -14,8 +14,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import org.zombie.universe.blocks.Modblocks;
-import org.zombie.universe.item.ModItems;
+import org.mob.universe.blocks.ModBlocks;
+import org.mob.universe.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Universe.MOD_ID)
@@ -33,9 +33,10 @@ public class Universe {
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        Modblocks.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
+
 
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeTab.register(modEventBus);

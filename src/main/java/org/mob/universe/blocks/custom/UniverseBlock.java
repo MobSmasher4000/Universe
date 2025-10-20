@@ -1,4 +1,4 @@
-package org.zombie.universe.blocks.custom;
+package org.mob.universe.blocks.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -14,14 +14,10 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-import org.zombie.universe.Config;
-import org.zombie.universe.blocks.Modblocks;
-import org.zombie.universe.item.ModItems;
+import org.mob.universe.Config;
+import org.mob.universe.blocks.ModBlocks;
 
 import java.util.List;
-import java.util.Set;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class UniverseBlock extends Block {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 8, 16);
@@ -42,13 +38,13 @@ public class UniverseBlock extends Block {
 
     @Override
     public @NotNull InteractionResult use(BlockState blockState, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        Block inferium = Modblocks.INFERIUM_UNIVERSE.get();
-        Block prudentium = Modblocks.PRUDENTIUM_UNIVERSE.get();
-        Block tertium = Modblocks.TERTIUM_UNIVERSE.get();
-        Block imperium = Modblocks.IMPERIUM_UNIVERSE.get();
-        Block supremium = Modblocks.SUPREMIUM_UNIVERSE.get();
-        Block insanium = Modblocks.INSANIUM_UNIVERSE.get();
-        Block creative = Modblocks.CREATIVE_UNIVERSE.get();
+        Block inferium = ModBlocks.INFERIUM_UNIVERSE.get();
+        Block prudentium = ModBlocks.PRUDENTIUM_UNIVERSE.get();
+        Block tertium = ModBlocks.TERTIUM_UNIVERSE.get();
+        Block imperium = ModBlocks.IMPERIUM_UNIVERSE.get();
+        Block supremium = ModBlocks.SUPREMIUM_UNIVERSE.get();
+        Block insanium = ModBlocks.INSANIUM_UNIVERSE.get();
+        Block creative = ModBlocks.CREATIVE_UNIVERSE.get();
         if (!level.isClientSide) {
             Block block = blockState.getBlock();
             if (block.equals(inferium)) {

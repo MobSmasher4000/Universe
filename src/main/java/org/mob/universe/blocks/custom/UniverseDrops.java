@@ -1,4 +1,4 @@
-package org.zombie.universe.blocks.custom;
+package org.mob.universe.blocks.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -6,11 +6,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import org.zombie.universe.Config;
-import org.zombie.universe.item.ModItems;
+import org.mob.universe.Config;
+import org.mob.universe.item.ModItems;
 
 import java.util.List;
-import java.util.function.Predicate;
 
 public class UniverseDrops {
     private static int bonus = Config.bonus + 1;

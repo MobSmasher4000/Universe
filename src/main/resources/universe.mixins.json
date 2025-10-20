@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "universe.refmap.json",
   "mixins": [
-    "ModEasterEggMixin"
   ],
   "client": [
   ],
