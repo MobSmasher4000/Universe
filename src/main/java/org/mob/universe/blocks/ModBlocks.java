@@ -11,7 +11,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.mob.universe.Universe;
 import org.mob.universe.blocks.custom.UniverseBlock;
-import org.zombie.universe.blocks.custom.*;
 import org.mob.universe.item.ModItems;
 
 import java.util.function.Supplier;
