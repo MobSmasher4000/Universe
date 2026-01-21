@@ -1,0 +1,32 @@
+{
+  "type": "universe:universe",
+  "catalyst": {
+    "item": "minecraft:acacia_sapling"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "maxRolls": 4,
+      "minRolls": 2,
+      "output": {
+        "item": "minecraft:acacia_log"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:stick"
+      }
+    },
+    {
+      "chance": 0.15,
+      "maxRolls": 1,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:acacia_sapling"
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 64],
 	"textures": {
-		"3": "universe:item/imperium_universe"
+		"3": "universe:item/universe_block"
 	},
 	"elements": [
 		{
@@ -95,7 +95,7 @@
 		},
 		"gui": {
 			"rotation": [28.5, 45, 0],
-			"translation": [0, 1.5, 0],
+			"translation": [0, 1.75, 0],
 			"scale": [0.77, 0.77, 0.77]
 		},
 		"head": {

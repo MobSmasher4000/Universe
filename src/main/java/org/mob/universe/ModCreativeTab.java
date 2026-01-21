@@ -18,6 +18,7 @@ public class ModCreativeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CREATIVE_UNIVERSE.get()))
                     .title(Component.translatable("creativetab.universetab"))
                     .displayItems(((itemDisplayParameters, output) ->{
+                        output.accept(ModBlocks.UNIVERSE_BLOCK.get());
                         output.accept(ModBlocks.INFERIUM_UNIVERSE.get());
                         output.accept(ModBlocks.PRUDENTIUM_UNIVERSE.get());
                         output.accept(ModBlocks.TERTIUM_UNIVERSE.get());

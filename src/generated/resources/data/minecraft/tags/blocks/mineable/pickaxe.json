@@ -1,5 +1,6 @@
 {
   "values": [
+    "universe:universe_block",
     "universe:inferium_universe",
     "universe:prudentium_universe",
     "universe:tertium_universe",

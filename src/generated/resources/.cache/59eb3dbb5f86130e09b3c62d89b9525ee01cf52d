@@ -1,0 +1,9 @@
+// 1.20.1	2026-01-17T15:39:44.3877107	Loot Tables
+0f3c66b54ca7ab9f4a48d6c1d8c9490b32098114 data/universe/loot_tables/blocks/creative_universe.json
+3d9a9feb69df6e8ec1860d54fe1362c2c37a51c9 data/universe/loot_tables/blocks/imperium_universe.json
+512b4e100cb2579994968958cb3c32b3c78f44e5 data/universe/loot_tables/blocks/inferium_universe.json
+442182f8af8a8dd3212bca4aa25e08a2de0ee3ce data/universe/loot_tables/blocks/insanium_universe.json
+82ecb286ae8374edf5ccc7aa1ec93f9899c2c6e3 data/universe/loot_tables/blocks/prudentium_universe.json
+773ed185d8e6d71283dbb98ade48de04ab1dd599 data/universe/loot_tables/blocks/supremium_universe.json
+475157130c234ddce98b7bd7b540b4aa82241731 data/universe/loot_tables/blocks/tertium_universe.json
+e738a944910af9c68bf4b5b20814016804c18e26 data/universe/loot_tables/blocks/universe_block.json

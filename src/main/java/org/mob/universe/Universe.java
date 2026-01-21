@@ -1,8 +1,9 @@
 package org.mob.universe;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +14,11 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.mob.universe.blocks.entities.ModBlockEntities;
+import org.mob.universe.recipe.ModRecipes;
+import org.mob.universe.render.UniverseRenderer;
+import org.mob.universe.screen.ModMenuTypes;
+import org.mob.universe.screen.screen.UniverseBlockScreen;
 import org.slf4j.Logger;
 import org.mob.universe.blocks.ModBlocks;
 import org.mob.universe.item.ModItems;
@@ -36,7 +42,9 @@ public class Universe {
         ModBlocks.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
-
+        ModBlockEntities.register(modEventBus);
+        ModRecipes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeTab.register(modEventBus);
@@ -45,7 +53,7 @@ public class Universe {
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+//        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -65,11 +73,13 @@ public class Universe {
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.UNIVERSE_BLOCK_MENU.get(), UniverseBlockScreen::new);
+        }
+
+        @SubscribeEvent
+        public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.UNIVERSE_BE.get(), UniverseRenderer::new);
         }
     }
 }

@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.imperium_universe",
+				"identifier": "geometry.universe_block",
 				"texture_width": 128,
 				"texture_height": 128,
 				"visible_bounds_width": 2,

@@ -1,0 +1,96 @@
+{
+  "type": "universe:universe",
+  "catalyst": {
+    "item": "minecraft:beacon"
+  },
+  "drops": [
+    {
+      "chance": 0.3,
+      "maxRolls": 4,
+      "minRolls": 2,
+      "output": {
+        "item": "minecraft:nether_gold_ore"
+      }
+    },
+    {
+      "chance": 0.5,
+      "maxRolls": 6,
+      "minRolls": 3,
+      "output": {
+        "item": "minecraft:nether_quartz_ore"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 6,
+      "minRolls": 3,
+      "output": {
+        "item": "minecraft:gilded_blackstone"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:ghast_tear"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:magma_cream"
+      }
+    },
+    {
+      "chance": 0.01,
+      "maxRolls": 3,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:wither_skeleton_skull"
+      }
+    },
+    {
+      "chance": 0.5,
+      "maxRolls": 5,
+      "minRolls": 2,
+      "output": {
+        "item": "minecraft:coal"
+      }
+    },
+    {
+      "chance": 0.2,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    {
+      "chance": 0.2,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:porkchop"
+      }
+    },
+    {
+      "chance": 0.2,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:string"
+      }
+    },
+    {
+      "chance": 0.4,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:ender_pearl"
+      }
+    }
+  ]
+}

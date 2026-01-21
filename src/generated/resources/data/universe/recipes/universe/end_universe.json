@@ -1,0 +1,64 @@
+{
+  "type": "universe:universe",
+  "catalyst": {
+    "item": "minecraft:dragon_egg"
+  },
+  "drops": [
+    {
+      "chance": 0.001,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:dragon_egg"
+      }
+    },
+    {
+      "chance": 0.7,
+      "maxRolls": 5,
+      "minRolls": 2,
+      "output": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    {
+      "chance": 0.001,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:dragon_head"
+      }
+    },
+    {
+      "chance": 0.01,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:dragon_breath"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 2,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:shulker_shell"
+      }
+    },
+    {
+      "chance": 1.0,
+      "maxRolls": 4,
+      "minRolls": 2,
+      "output": {
+        "item": "minecraft:end_stone"
+      }
+    },
+    {
+      "chance": 0.1,
+      "maxRolls": 4,
+      "minRolls": 1,
+      "output": {
+        "item": "minecraft:chorus_fruit"
+      }
+    }
+  ]
+}

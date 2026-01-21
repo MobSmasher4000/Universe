@@ -1,12 +1,19 @@
 {
-  "block.universe.inferium_universe": "Inferium Contained Universe",
-  "block.universe.prudentium_universe": "Prudentium Contained Universe",
-  "block.universe.tertium_universe": "Tertium Contained Universe",
-  "block.universe.imperium_universe": "Imperium Contained Universe",
-  "block.universe.supremium_universe": "Supremium Contained Universe",
-  "block.universe.insanium_universe": "Insanium Contained Universe",
-  "block.universe.creative_universe": "Creative Contained Universe",
+  "block.universe.universe_block": "Contained Universe",
+  "block.universe.inferium_universe": "Inferium Contained Catalyst",
+  "block.universe.prudentium_universe": "Prudentium Contained Catalyst",
+  "block.universe.tertium_universe": "Tertium Contained Catalyst",
+  "block.universe.imperium_universe": "Imperium Contained Catalyst",
+  "block.universe.supremium_universe": "Supremium Contained Catalyst",
+  "block.universe.insanium_universe": "Insanium Contained Catalyst",
+  "block.universe.creative_universe": "Creative Contained Catalyst",
   "item.universe.drop_specifier": "Universe Drop Specifier",
+
+  "tooltip.universe.catalyst": "Now its only a catalyst",
+  "tooltip.universe.drop_rolls": "Rolls : %d - %d",
+  "tooltip.universe.remove": "Will be getting removed in next update",
+  "tooltip.universe.universe_open": "Shift Right click with empty hand to open gui",
+  "tooltip.universe.drop_specifier": "have the drop to force in offhand and specifier in main hand, also the drop needs to be inside the current recipe being processed by universe",
 
   "creativetab.universetab": "Contained Universe"
 }
