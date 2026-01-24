@@ -1,8 +1,10 @@
-// 1.20.1	2026-01-21T14:22:10.2789688	Recipes
+// 1.20.1	2026-01-24T20:48:11.4415285	Recipes
+c44a80c2cf8ac04b97aa871bfe8c0ea3ad6cf589 data/universe/advancements/recipes/misc/drop_specifier.json
 5389420b3a28f692212ae50eb53e2759e9b95b54 data/universe/advancements/recipes/misc/universe_block.json
 4425f5a34bbc026206bd9af1291580aec85bde26 data/universe/advancements/recipes/universe/end_universe.json
 dcc96a9ed3823b38dd311180a3b41da32848d8e4 data/universe/advancements/recipes/universe/nether_universe.json
 323648d4027d01ed8de8309e0aef53e83c3e14e7 data/universe/advancements/recipes/universe/overworld_universe.json
+b0ea631d4b3aef0dcf359ba6a8ec5c7bd0158e43 data/universe/recipes/drop_specifier.json
 49880573155ec37d5a94d9d202ac994b9f486ec0 data/universe/recipes/universe/end_universe.json
 70eafe70a79aeb03f54c8e556cd5dd690b6f2479 data/universe/recipes/universe/nether_universe.json
 c78edfe432e87836133c364f91795a8bd2f475b6 data/universe/recipes/universe/overworld_universe.json

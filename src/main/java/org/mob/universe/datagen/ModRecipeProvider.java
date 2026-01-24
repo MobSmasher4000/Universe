@@ -5,11 +5,13 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.MapItem;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
 import org.mob.universe.Universe;
 import org.mob.universe.blocks.ModBlocks;
 import org.mob.universe.datagen.builder.UniverseRecipeBuilder;
+import org.mob.universe.item.ModItems;
 
 import java.util.function.Consumer;
 
@@ -21,6 +23,7 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
 
+//      Universe crafting recipe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.UNIVERSE_BLOCK.get())
                 .pattern("NMN")
                 .pattern("DED")
@@ -30,6 +33,17 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('D', Items.DRAGON_BREATH)
                 .define('E', Items.DRAGON_HEAD)
                 .define('C', Items.CRYING_OBSIDIAN)
+                .define('T', Items.TOTEM_OF_UNDYING)
+                .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
+                .save(consumer);
+
+//      Drop specifier recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPECIFIER_WAND.get())
+                .pattern("BNB")
+                .pattern("NTN")
+                .pattern("BNB")
+                .define('B', Items.NETHERITE_BLOCK)
+                .define('N', Items.NETHER_STAR)
                 .define('T', Items.TOTEM_OF_UNDYING)
                 .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
                 .save(consumer);
